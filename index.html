@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 由外部嵌入的 CSS 檔案-->
+    <!--<link rel="stylesheet" type="text/css" th:href="@{/css/styleHome.css}" />-->
+    <link rel="stylesheet" type="text/css" href="./css/styleIndex.css" />
+    <!--icon 的 link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>首頁</title>
+  </head>
+  <body>
+    <!--Header區域-->
+    <div class="header">
+      <div class="container header-height">
+        <!--Header大標題-->
+        <div class="header-txt">歡迎來到 初學者程式設計</div>
+        <!--burger 收放 nav的按鈕-->
+        <div class="burger" onclick="homeMenu_touch()">
+          <div class="burger1"></div>
+          <div class="burger2"></div>
+          <div class="burger3"></div>
+        </div>
+      </div>
+    </div>
+    <!--nav bar 導覽列-->
+    <div class="navbar" id="navbar">
+      <nav>
+        <ul>
+          <li><a href="#">關於我</a></li>
+          <li><a href="#html-ds">HTML網站設計</a></li>
+          <li><a href="#spring-ds">Spring框架設計</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--content 區域-->
+    <div class="content">
+      <!-- -二分區塊  關於我-->
+      <div class="section section-bg">
+        <div class="container">
+          <div class="title txt-center txt-white">關於我</div>
+          <div class="title-line bg-white"></div>
+          <div class="area-intro">
+            <div class="area-goal">
+              <div class="intro-title txt-white">
+                目的 <i class="fa-solid fa-star" style="color: yellow"></i>
+              </div>
+
+              <div class="intro-txt txt-white">
+                這個網站主要目的是把在這一年多裡上課所做的實作聚集起來，方便自己整理，也可以讓觀看的人比較清楚。
+              </div>
+            </div>
+            <div class="area-goal">
+              <div class="intro-title txt-white">
+                簡短介紹 <i class="fa-solid fa-star" style="color: yellow"></i>
+              </div>
+
+              <div class="intro-txt txt-white">
+                我並不是程式相關領域的學生，也可以說我是一個程式小白，
+                從Java基礎語言開始一路慢慢往上學習，當然這一路上遇到很多難題，
+                甚至覺得老師不是用中文上課嗎?
+                一個字一個字分開聽，我知道是什麼意思，
+                但整句合起來怎麼聽不懂了呢?
+                別人3小時可以上完的課，我可能需要半天，甚至到一天才可以上完，
+                播放影片、影片暫停、找資料、重播影片、自己實作，每次大概都是一樣的路徑不停循環。雖然這一路上並不簡單，
+                但當自己做出一點點結果的時候，心中就會有股莫名的成就感，而這些成就感正式支持著我繼續往前面邁進的動力。
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--卡片式 分三區塊 HTML網站設計-->
+      <div class="section" id="html-ds">
+        <div class="container">
+          <div class="title txt-center">HTML網站設計</div>
+          <div class="title-line"></div>
+          <div class="area">
+            <div class="area2 card">
+              <div class="card-pic">
+                <img src="./images/Umeis.png" />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">屋麥思-手做甜點蛋糕</div>
+                <div class="txt">
+                  一頁式RWD響應式形象設計網站，搭配導覽列，設計手做甜點蛋糕店家形象網站。
+                </div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.open('umeisHTML.html', '_blank')"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img src="./images/aboutChristmas.png" />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">聖誕節介紹網站</div>
+                <div class="txt">
+                  利用網路上已有的聖誕節資訊，製作成不同視覺效果的資訊網站。
+                </div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.open('CH2-text.html', '_blank')"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img src="" />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">吉沐家 寵物美容</div>
+                <div class="txt">製作店家形象網站。</div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.open('jimu.html', '_blank')"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--area尾-->
+        </div>
+        <!--container尾-->
+      </div>
+      <!--section尾-->
+
+      <!--Spring-->
+      <div class="section" id="spring-ds">
+        <div class="container">
+          <div class="title txt-center">Spring框架設計</div>
+          <div class="title-line"></div>
+          <div class="area">
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/login.png"
+                  th:src="@{/images/login.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">會員登入作業</div>
+                <div class="txt">
+                  將前端頁面(Html)得到的資料轉到後端資料庫進行驗證，
+                  並將訊息狀態帶到樣板引擎產生的頁面。
+                </div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.open('http://localhost:8087/users/login', '_blank');"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/register.png"
+                  th:src="@{/images/register.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">會員註冊作業</div>
+                <div class="txt">
+                  提供方法 調用頁面 進行會員註冊作業， 表單資訊對應到注入的資料
+                  會自動封存資訊。
+                </div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    target="_blank"
+                    onclick="window.open('http://localhost:8087/users/register', '_blank')"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/qry.png"
+                  th:src="@{/images/qry.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle txt-center">會員查詢及會員更新</div>
+                <div class="txt">
+                  資料查詢使用thymeleaf做條件式的結果渲染以及資料更新。
+                </div>
+                <!--按鈕-->
+                <div class="txt-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    target="_blank"
+                    onclick="window.open('http://localhost:8087/users/qry', '_blank')"
+                  >
+                    立即前往
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--第二行 的三分區塊-->
+          <!-- <div class="area">
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/bread.jpg"
+                  th:src="@{/images/momocar.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle">新鮮水果塔</div>
+                <div class="txt">當季新鮮水果搭配香脆塔皮，多層口感滋味</div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/momocar.png"
+                  th:src="@{/images/momocar.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle">新鮮水果塔</div>
+                <div class="txt">當季新鮮水果搭配香脆塔皮，多層口感滋味</div>
+              </div>
+            </div>
+
+            <div class="area2 card">
+              <div class="card-pic">
+                <img
+                  src="../static/images/bread.jpg"
+                  th:src="@{/images/momocar.png}"
+                />
+              </div>
+              <div class="card-txt">
+                <div class="subtitle"><a href="#">新鮮水果塔</a></div>
+                <div class="txt">當季新鮮水果搭配香脆塔皮，多層口感滋味</div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+        <!--container結束-->
+      </div>
+      <!--Spring的section結束-->
+      <!--底端footer-->
+      <div class="footer">
+        <div>
+          <div class="copyright">
+            Copyright &#169; 2025
+            <span style="white-space: nowrap">YC Lin-初學者程式設計</span>
+            <span style="white-space: nowrap">版權所有</span>
+          </div>
+        </div>
+      </div>
+      <!--底端footer結束-->
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
